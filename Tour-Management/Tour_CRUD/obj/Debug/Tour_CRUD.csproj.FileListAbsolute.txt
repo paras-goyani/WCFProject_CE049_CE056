@@ -12,3 +12,10 @@ C:\Users\Dells\Documents\GitHub\Tour-Management\Tour_CRUD\obj\Debug\Tour_CRUD.cs
 C:\Users\Dells\Documents\GitHub\Tour-Management\Tour_CRUD\obj\Debug\Tour_CRUD.csproj.CoreCompileInputs.cache
 C:\Users\Dells\Documents\GitHub\Tour-Management\Tour_CRUD\obj\Debug\Tour_CRUD.dll
 C:\Users\Dells\Documents\GitHub\Tour-Management\Tour_CRUD\obj\Debug\Tour_CRUD.pdb
+C:\Users\Dells\Documents\GitHub\WCFProject_CE049_CE056\Tour-Management\Tour_CRUD\obj\Debug\Tour_CRUD.csprojAssemblyReference.cache
+C:\Users\Dells\Documents\GitHub\WCFProject_CE049_CE056\Tour-Management\Tour_CRUD\obj\Debug\Tour_CRUD.csproj.CoreCompileInputs.cache
+C:\Users\Dells\Documents\GitHub\WCFProject_CE049_CE056\Tour-Management\Tour_CRUD\obj\Debug\Tour_CRUD.dll
+C:\Users\Dells\Documents\GitHub\WCFProject_CE049_CE056\Tour-Management\Tour_CRUD\obj\Debug\Tour_CRUD.pdb
+C:\Users\Dells\Documents\GitHub\WCFProject_CE049_CE056\Tour-Management\Tour_CRUD\bin\Debug\Tour_CRUD.dll.config
+C:\Users\Dells\Documents\GitHub\WCFProject_CE049_CE056\Tour-Management\Tour_CRUD\bin\Debug\Tour_CRUD.dll
+C:\Users\Dells\Documents\GitHub\WCFProject_CE049_CE056\Tour-Management\Tour_CRUD\bin\Debug\Tour_CRUD.pdb

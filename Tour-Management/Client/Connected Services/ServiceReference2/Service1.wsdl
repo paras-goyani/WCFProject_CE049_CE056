@@ -49,6 +49,12 @@
   <wsdl:message name="IService1_addToFav_OutputMessage">
     <wsdl:part name="parameters" element="tns:addToFavResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_getFPlace1_InputMessage">
+    <wsdl:part name="parameters" element="tns:getFPlace1" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getFPlace1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getFPlace1Response" />
+  </wsdl:message>
   <wsdl:message name="IService1_addpessenger_InputMessage">
     <wsdl:part name="parameters" element="tns:addpessenger" />
   </wsdl:message>
@@ -83,6 +89,10 @@
     <wsdl:operation name="addToFav">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/addToFav" message="tns:IService1_addToFav_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/addToFavResponse" message="tns:IService1_addToFav_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getFPlace1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getFPlace1" message="tns:IService1_getFPlace1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getFPlace1Response" message="tns:IService1_getFPlace1_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="addpessenger">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/addpessenger" message="tns:IService1_addpessenger_InputMessage" />
@@ -147,6 +157,15 @@
     </wsdl:operation>
     <wsdl:operation name="addToFav">
       <soap:operation soapAction="http://tempuri.org/IService1/addToFav" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFPlace1">
+      <soap:operation soapAction="http://tempuri.org/IService1/getFPlace1" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -105,6 +105,20 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="getFPlace1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getFPlace1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Tour_CRUD" minOccurs="0" name="getFPlace1Result" nillable="true" type="q4:ArrayOftour" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="addpessenger">
     <xs:complexType>
       <xs:sequence>

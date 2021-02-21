@@ -168,6 +168,12 @@ namespace Client.ServiceReference2 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addToFav", ReplyAction="http://tempuri.org/IService1/addToFavResponse")]
         System.Threading.Tasks.Task<bool> addToFavAsync(string email, int placeid);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getFPlace1", ReplyAction="http://tempuri.org/IService1/getFPlace1Response")]
+        Client.ServiceReference2.tour[] getFPlace1(string email);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getFPlace1", ReplyAction="http://tempuri.org/IService1/getFPlace1Response")]
+        System.Threading.Tasks.Task<Client.ServiceReference2.tour[]> getFPlace1Async(string email);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addpessenger", ReplyAction="http://tempuri.org/IService1/addpessengerResponse")]
         bool addpessenger(string fname, string lname, string email, string age, string trip_date);
         
@@ -256,6 +262,14 @@ namespace Client.ServiceReference2 {
         
         public System.Threading.Tasks.Task<bool> addToFavAsync(string email, int placeid) {
             return base.Channel.addToFavAsync(email, placeid);
+        }
+        
+        public Client.ServiceReference2.tour[] getFPlace1(string email) {
+            return base.Channel.getFPlace1(email);
+        }
+        
+        public System.Threading.Tasks.Task<Client.ServiceReference2.tour[]> getFPlace1Async(string email) {
+            return base.Channel.getFPlace1Async(email);
         }
         
         public bool addpessenger(string fname, string lname, string email, string age, string trip_date) {
