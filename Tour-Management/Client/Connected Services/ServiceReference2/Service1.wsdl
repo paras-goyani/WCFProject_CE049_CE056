@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="crud" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/Tour_CRUD/Service1/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/Tour_CRUD/Service1/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/Tour_CRUD/Service1/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Tour_CRUD" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_addPlace_InputMessage">
+    <wsdl:part name="parameters" element="tns:addPlace" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addPlace_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addPlaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllPlace_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllPlace" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllPlace_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllPlaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getPlace_InputMessage">
+    <wsdl:part name="parameters" element="tns:getPlace" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getPlace_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getPlaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getFPlace_InputMessage">
+    <wsdl:part name="parameters" element="tns:getFPlace" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getFPlace_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getFPlaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updatePlace_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatePlace" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updatePlace_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatePlaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:delete" />
+  </wsdl:message>
+  <wsdl:message name="IService1_delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addToFav_InputMessage">
+    <wsdl:part name="parameters" element="tns:addToFav" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addToFav_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addToFavResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addpessenger_InputMessage">
+    <wsdl:part name="parameters" element="tns:addpessenger" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addpessenger_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addpessengerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="addPlace">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addPlace" message="tns:IService1_addPlace_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addPlaceResponse" message="tns:IService1_addPlace_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllPlace">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getAllPlace" message="tns:IService1_getAllPlace_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getAllPlaceResponse" message="tns:IService1_getAllPlace_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPlace">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getPlace" message="tns:IService1_getPlace_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getPlaceResponse" message="tns:IService1_getPlace_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getFPlace">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getFPlace" message="tns:IService1_getFPlace_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getFPlaceResponse" message="tns:IService1_getFPlace_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatePlace">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/updatePlace" message="tns:IService1_updatePlace_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/updatePlaceResponse" message="tns:IService1_updatePlace_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/delete" message="tns:IService1_delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/deleteResponse" message="tns:IService1_delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addToFav">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addToFav" message="tns:IService1_addToFav_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addToFavResponse" message="tns:IService1_addToFav_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addpessenger">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addpessenger" message="tns:IService1_addpessenger_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addpessengerResponse" message="tns:IService1_addpessenger_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="addPlace">
+      <soap:operation soapAction="http://tempuri.org/IService1/addPlace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllPlace">
+      <soap:operation soapAction="http://tempuri.org/IService1/getAllPlace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPlace">
+      <soap:operation soapAction="http://tempuri.org/IService1/getPlace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFPlace">
+      <soap:operation soapAction="http://tempuri.org/IService1/getFPlace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatePlace">
+      <soap:operation soapAction="http://tempuri.org/IService1/updatePlace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <soap:operation soapAction="http://tempuri.org/IService1/delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addToFav">
+      <soap:operation soapAction="http://tempuri.org/IService1/addToFav" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addpessenger">
+      <soap:operation soapAction="http://tempuri.org/IService1/addpessenger" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="crud">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/Tour_CRUD/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
